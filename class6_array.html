@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        const p_language = ['javascript', 'java', 'php', 'python', 1,2,3, {name: 'Sugam Bohara', address: 'KTM'}]
+        //accessing through index
+        document.write(`${p_language[0]} <br>`)
+        document.write(`${p_language} <br>`)
+
+        //push() - add element in array by last index number
+        p_language.push('golang')
+        document.write(`${p_language} <br>`)
+
+        //pop() - remove element from the last index number
+        p_language.pop()
+        document.write(`${p_language} <br>`)
+
+        //unshift() - add element in array from the first index
+        p_language.unshift('ruby')
+        document.write(`${p_language} <br>`)
+
+        //shift() - remove element in array from the first index
+        p_language.shift()
+        document.write(`${p_language} <br>`)
+
+        //splice
+        p_language.splice(3,  3, 'hello', 'ruby on rail')
+        document.write(`${p_language} <br>`)
+
+        //reverse()
+        document.write(`${p_language.reverse()} <br>`)
+
+        //sort()
+        document.write(`${p_language.sort()} <br>`)
+
+        m_language = ['html', 'css']
+        document.write(`${p_language.concat(m_language)}`)
+    </script>
+</body>
+</html>

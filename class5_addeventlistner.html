@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addevent Listner</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container-img{
+            border: 5px solid darkblue;
+            width: 600px;
+            height: 300px;
+            position: relative;
+        }
+        .container-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            left: 10px;
+            padding: 5px;
+        }
+        .right{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-img">
+            <img src="https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg" alt="">
+            <button class="left" id="lbtn">&lt;</button>
+            <button class="right" id="rbtn">&gt;</button>
+        </div>
+
+
+    <script>
+        const pre=()=>{
+            document.querySelector('img').src = 'https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg'
+        }
+        document.getElementById("lbtn").addEventListener('click', pre)
+
+        document.getElementById("rbtn").addEventListener('click', ()=>{
+            document.querySelector('img').src = `https://c4.wallpaperflare.com/wallpaper/39/346/426/digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg`
+        })
+
+    </script>
+</body>
+</html>

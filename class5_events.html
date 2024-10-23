@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .container-img{
+            border: 5px solid darkblue;
+            width: 600px;
+            height: 300px;
+            position: relative;
+        }
+        .container-img img{
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            left: 10px;
+            padding: 5px;
+        }
+        .right{
+            position: absolute;
+            font-size: 20px;
+            border: none;
+            top: 40%;
+            right: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="date()">Click me for date</button>
+    <h2 class="head" id="heading"></h2>
+    <h3 id = 'heading3'></h3>
+    <h4 class="head"></h4>
+
+    <div class="container">
+        <div class="container-img">
+            <img src="https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg" alt="">
+            <button class="left" onclick="pre()">&lt;</button>
+            <button class="right" onclick="next()">&gt;</button>
+        </div>
+        
+        
+    </div>
+    <script>
+        // onclick, ondblclick, onsubmit, onload, onkeyup, onkeydown, onmouseover, onmouseout, onmousemove
+
+        const date=()=>{
+            //dom
+            //document.querySelector('h2').innerHTML = new Date()
+            //document.getElementById("heading3").innerHTML = new Date()
+            document.getElementsByClassName("head")[1].innerHTML = new Date()
+            document.getElementsByClassName('head')[1].style.backgroundColor = `red`
+        }
+
+        const pre=()=>{
+            document.querySelector('img').src = 'https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg'
+        }
+
+        const next=()=>{
+            document.querySelector('img').src = 'https://c4.wallpaperflare.com/wallpaper/39/346/426/digital-art-men-city-futuristic-night-hd-wallpaper-preview.jpg'
+        }
+    </script>
+</body>
+</html>

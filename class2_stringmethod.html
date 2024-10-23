@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <script>
+        const text = "We are reading javascript programming language as well as javascript is used in react."
+        document.write(`${text} <br>`)
+        document.write(`${text[0]} <br>`) // to access the character in string through indexing
+        document.write(`${text.length} <br>`)  // to know the length of string
+        document.write(`${typeof(text)} <br>`) // to know the data type of the variables
+        document.write(`${text.toUpperCase()} <br> ${text.toLowerCase()} <br>`) // to convert string into uppercase and lower case
+        document.write(`${text.indexOf('javascript')} <br>`) // to know the index number of given data
+        document.write(`${text.lastIndexOf("javascript")} <br> `) 
+        document.write(`${text.search('react')}<br>`)
+        document.write(`${text.includes("HEE")} <br>`)
+        document.write(`${text.split("well")}<br>`)
+        document.write(`${text.slice(0,9)}`)
+    </script>
+
+</body>
+</html>

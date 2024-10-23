@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructure and Object Destructure</title>
+</head>
+<body>
+    <script>
+        //Array Destructure
+        const fruits = ['apple', ' mango', 'papaya', 'orange', 'grapes']
+        const[first,second]=fruits
+        document.write(first,"<br>")
+
+
+        const student = {
+            fname: "Hari",
+            lname: "Shrestha",
+            address: "KTM",
+            education:"MIT"
+        }
+
+        // Object Destructure
+        
+        const displaystudent=({fname, lname, address})=>{
+            document.write(`Student Full Name is ${fname} ${lname}. Student address is ${address}`)
+        }
+
+        displaystudent(student)
+    </script>
+</body>
+</html>
