@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPP</title>
+</head>
+<body>
+    <script>
+        //blueprint of  object
+        class Student{
+            constructor(fname,lname,address){
+                this.fname=fname
+                this.lanme=lname
+                this.address=address
+                document.write(`${fname} <br>`)
+            }
+
+            display(){
+                return `Full name of student is ${this.fname} ${this.lname}`
+            }
+        }
+
+        //instance of a class
+        student = new Student ('Sugam', 'Bohara', 'Kathmandu')
+        document.write(student.display())
+
+        //inheritance
+        //polymorphism
+        //encapsulation
+        //abstraction
+    </script>
+</body>
+</html>

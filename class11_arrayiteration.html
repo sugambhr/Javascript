@@ -6,6 +6,7 @@
     <title>Array Iteration</title>
 </head>
 <body>
+    
     <script>
         // Foreach
         const num =[1,2,3,4,5]
@@ -32,7 +33,9 @@
         document.write(totalprice, "<br>")
 
     //reduceRight()
-
+        const reducerightarray = price.reduceRight((x,y,z)=>x+y-z)
+        document.write(reducerightarray, "<br>")
+    
     //every()
     const everyarray = price.every(x=>x>1000)
     document.write(everyarray, "<br>")
@@ -40,6 +43,15 @@
     //some()
     const somearray = price.some(x=>x>1000)
     document.write(somearray, "<br>")
+
+    //spread
+    const q1 = ["Jan", "Feb", "Mar"];
+const q2 = ["Apr", "May", "Jun"];
+const q3 = ["Jul", "Aug", "Sep"];
+const q4 = ["Oct", "Nov", "May"];
+
+const year = [...q1, ...q2, ...q3, ...q4];
+document.write(year, "<br>")
 
     </script>
 </body>

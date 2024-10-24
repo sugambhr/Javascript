@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try Catch</title>
+</head>
+<body>
+    <script>
+        try{
+            let x = parseInt(prompt("Enter a number :"))
+            let y = parseInt(prompt("Enter a number :"))
+            let z = x/y
+            if(y==0){
+                throw new ("Zero cannot divide other number");
+
+            }
+            else{
+                document.write(z, "<br>")
+            }
+        }
+        catch(e){
+            console.log(e)
+        }
+
+        document.write(`Welcome to our class`)
+    </script>
+</body>
+</html>
